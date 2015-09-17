@@ -1,0 +1,43 @@
+{
+    "parser": "babel-eslint",
+    "plugins": [
+        "react"
+    ],
+    "ecmaFeatures": {
+        "jsx": true
+    },
+    "rules": {
+        "brace-style": [2, "1tbs"],//'function foo(){' in the same line
+        "camelcase": [2, {"properties": "always"}],//'aName' not 'a_name'
+        "comma-dangle": [2, "never"],//no '{a:1,}'
+        "no-console": 2,//no 'console.log'
+        "curly": 2,//must use '{}' when if, else, for, while, or do
+        "dot-notation": 2,//'a.b' not 'a['b']'
+        "func-style": [2, "declaration"],//'function doSomething()' not 'var doSomething = function()'
+        "indent": [2, "tab"],//use tabs(4 blank space) as indentation
+        "key-spacing": [2, {"beforeColon": false, "afterColon": true}],//'{a: 1}' not '{a :1}'
+        "no-cond-assign": 2,//no 'if(a=1)'
+        "no-constant-condition": 2,//no 'if(true)'
+        "no-debugger": 2,//no 'debugger;'
+        "no-dupe-args": 2,//no 'function(a,a)'
+        "no-dupe-keys": 2,//no '{a:1,a:2}'
+        "no-duplicate-case": 2,
+        "no-empty": 2,//no emtpy block statement
+        "no-empty-character-class": 2,
+        "no-extra-boolean-cast": 2,//no '!!!bar', no 'if(!!bar)'
+        "no-extra-semi": 2,//no ';;'
+        "no-ex-assign": 2,
+        "no-func-assign": 2,
+        "no-obj-calls": 2,//avoid unused definition
+        "no-octal": 2,//no 'var num = 081'
+        "no-mixed-spaces-and-tabs": [2, "smart-tabs"],
+        "no-redeclare": [2, {"builtinGlobals": true}],
+        "no-sparse-arrays": 2,//no "[1,,2]'
+        "no-unexpected-multiline": 2,
+        "no-unreachable": 2,
+        "quotes": [2, "single"],//use single quotes
+        "semi": [2, "always"],//must end with ';'
+        "space-infix-ops": 2,//'a + b' not 'a+b',
+        "valid-typeof": 2
+    }
+}
